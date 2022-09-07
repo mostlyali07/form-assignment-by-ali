@@ -1,7 +1,23 @@
 .bgd {
-    background-image: url(/bgd-img.png);
+    background-image: url(/bgd-img.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 94vh;
+    height: 100vh;
+}
+
+.login-main {
+    background-color: #000000ad;
+    margin-top: 10%;
+    padding: 50px;
+    box-shadow: 0px 0px 24px 8px rgb(0 0 0 / 22%);
+}
+
+.htwo {
+    color: white;
+    padding-top: 12%;
+}
+
+.para {
+    color: white;
 }
