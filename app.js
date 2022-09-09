@@ -18,7 +18,7 @@ function loadAllTodo() {
 }
 loadAllTodo();
 
-function addTodo() {
+function submitData() {
   var input = document.getElementById("todo-value");
   if (input.value.trim() !== "") {
     var li = `
