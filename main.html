@@ -9,10 +9,11 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>Main Form</title>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 
 <body>
-    <div class="container">
+    <!-- <div class="container">
         <div class="row">
             <div class="col-md-6">
                     <div class="form-group">
@@ -22,7 +23,7 @@
                     </div>
                     <div class="form-group">
                         <input type="email" placeholder="Enter Your Email" name="email"
-                            class="form-control form-control-white ">
+                            class="form-control form-control-white">
                         <span class="invalid-feedback"></span>
                     </div>
                     <div class="form-group mt-4">
@@ -31,6 +32,42 @@
                 <input type="text" name="" id="todo-value" />
                 <button onclick="submitData()">Submit</button>
             </div>
+        </div>
+    </div> -->
+    <div class="container text-white bg-dark">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1>Course Registration Form</h1>
+                <h5>Services - Education - Registration</h5>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <form>
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">Select city</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>Karachi</option>
+                            <option>Lahore</option>
+                            <option>Islamabad</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput">Example label</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+                      </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="name@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="typeNumber">Number input</label>
+                        <input type="number" id="typeNumber" class="form-control" />
+                      </div>
+                </form>
+            </div>
+            <div class="col-md-6"></div>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
