@@ -1,9 +1,8 @@
-.bgd {
+body {
     background-image: url(/bgd-img.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
 }
 
 .login-main {
@@ -20,4 +19,50 @@
 
 .para {
     color: white;
+}
+
+.main-container {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    padding: 40px;
+    border-radius: 6px;
+    box-shadow: 0px 0px 12px 2px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 12px 2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 12px 2px rgba(0, 0, 0, 0.75);
+}
+.mian-left{
+    padding-left: 70px;
+}
+.mian-right{
+    padding-right: 70px;
+}
+.main-top h1 {
+    font-size: 55px;
+    font-family: 'Josefin Sans', sans-serif;
+    padding-top: 50px;
+}
+
+.main-top h5 {
+    font-size: 22px;
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 20px;
+}
+
+label {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+::placeholder {
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+}
+
+option {
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn-one{
+    margin-top: 20px;
+    font-family: 'Josefin Sans', sans-serif;
 }

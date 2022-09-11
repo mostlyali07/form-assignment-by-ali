@@ -22,6 +22,16 @@ function submitData() {
   var myName = document.getElementById("my-name");
   var fName = document.getElementById("f-name");
   var myCity = document.getElementById("my-city");
+  var course = document.getElementById("my-course");
+  var myEmail = document.getElementById("my-email");
+  var phone = document.getElementById("my-phone");
+  var Cnic = document.getElementById("my-Cnic");
+  var fCnic = document.getElementById("f-cnic");
+  var Dob = document.getElementById("my-dob");
+  var gender = document.getElementById("my-gender");
+  var address = document.getElementById("my-address");
+  var qual = document.getElementById("my-qual");
+  var picture = document.getElementById("my-picture");
   if (myName.value.trim() !== "") {
     // var li = `
     //      ${myName.value} 
@@ -31,6 +41,16 @@ function submitData() {
     arr.push(myName.value);
     arr.push(fName.value);
     arr.push(myCity.value);
+    arr.push(course.value);
+    arr.push(myEmail.value);
+    arr.push(phone.value);
+    arr.push(Cnic.value);
+    arr.push(fCnic.value);
+    arr.push(Dob.value);
+    arr.push(gender.value);
+    arr.push(address.value);
+    arr.push(qual.value);
+    arr.push(picture.value);
     localStorage.setItem("your-data", JSON.stringify(arr));
     // list.innerHTML += li;
     // myName.fName.value = "";
