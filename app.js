@@ -19,20 +19,37 @@ function loadAllTodo() {
 loadAllTodo();
 
 function submitData() {
-  var input = document.getElementById("todo-value");
-  if (input.value.trim() !== "") {
-    var li = `
-    <li> ${input.value} 
-    <button onclick="deleteOne('${arr.length}')">Del</button>
-    <button onclick="editTodo('${input.value}','${arr.length}')">Edit</button> 
-    </li>
-    `;
-    arr.push(input.value);
-    localStorage.setItem("todo-list", JSON.stringify(arr));
-    list.innerHTML += li;
-    input.value = "";
-    input.focus();
+  var myName = document.getElementById("my-name");
+  var fName = document.getElementById("f-name");
+  var myCity = document.getElementById("my-city");
+  if (myName.value.trim() !== "") {
+    // var li = `
+    //      ${myName.value} 
+    // <button onclick="deleteOne('${arr.length}')">Del</button>
+    // <button onclick="editTodo('${myName.value}','${arr.length}')">Edit</button>
+    // `;
+    arr.push(myName.value);
+    arr.push(fName.value);
+    arr.push(myCity.value);
+    localStorage.setItem("your-data", JSON.stringify(arr));
+    // list.innerHTML += li;
+    // myName.fName.value = "";
+    // myName.fName.focus();
   }
+  // var fName = document.getElementById("f-name");
+  // if (fName.value.trim() !== "") {
+  //   var li = `
+  //   <li> ${fName.value} 
+  //   <button onclick="deleteOne('${arr.length}')">Del</button>
+  //   <button onclick="editTodo('${fName.value}','${arr.length}')">Edit</button> 
+  //   </li>
+  //   `;
+  //   arr.push(fName.value);
+  //   localStorage.setItem("f-name", JSON.stringify(arr));
+  //   list.innerHTML += li;
+  //   fName.value = "";
+  //   fName.focus();
+  // }
 }
 
 function deleteAll() {
